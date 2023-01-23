@@ -24,7 +24,7 @@ Regole Setup struttura (da rimuovere in seguito)
 }
 
 .setup .bottom_header{
-    height: 500px;
+    height: 400px;
     background-color: rgb(3, 3, 126);
 }
 
@@ -35,6 +35,11 @@ Regole Setup struttura (da rimuovere in seguito)
 
 .setup .logo,.link, .login{
     border: 1px dashed black;
+}
+
+.setup .bottom_header_text{
+    background-color: rgb(248, 127, 218);
+    height: 350px;
 }
 
 
@@ -78,6 +83,24 @@ Regole Setup struttura (da rimuovere in seguito)
     content:'';
     display:block;
     clear: both;
+}
+
+
+/* 
+----------------------------------
+ Bottom Header
+----------------------------------
+*/
+
+.bottom_header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bottom_header_text{
+    width: 900px;
 }
 
 
