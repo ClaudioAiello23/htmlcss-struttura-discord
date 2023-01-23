@@ -31,7 +31,7 @@ Regole Setup struttura (da rimuovere in seguito)
     background-color: orange;
 }
 
-.setup .logo,.link, .login{
+.setup .logo_top,.link, .login{
     border: 1px dashed black;
 }
 
@@ -63,12 +63,40 @@ Regole Setup struttura (da rimuovere in seguito)
 
 .setup .huge{
     height: 700px;
-    background-color: rgb(0, 91, 8);
+    background-color: rgb(1, 123, 11);
     border: 1px dashed black;
 }
 
+.setup .top_footer{
+    height: 550px;
+}
+
+.setup .big_footer{
+    height: 500px;
+    background-color: rgb(249, 104, 128);
+    border: 1px dashed black;
+}
+
+.setup .small_footer{
+    height: 500px;
+    background-color: rgb(0, 146, 139);
+    border: 1px dashed white;
+}
+
+.setup .bottom_footer{
+    height: 100px;
+}
 
 
+.setup .bottom_footer_text{
+    background-color: rgb(70, 250, 220);
+    height: 70px;
+}
+
+.setup .logo_footer, .button_footer{
+    border: 1px dashed black;
+    background-color: rgb(248, 150, 166);
+}
 
 
 /* 
@@ -88,7 +116,7 @@ Regole Setup struttura (da rimuovere in seguito)
     margin: 0 auto;
 }
 
-.logo{
+.logo_top{
     float:left;
     width: 25%;
 }
@@ -105,7 +133,7 @@ Regole Setup struttura (da rimuovere in seguito)
     text-align: right;
 }
 
-.logo, .link, .login{
+.logo_top, .link, .login{
     padding: 15px;
 }
 
@@ -182,3 +210,47 @@ che ha classe ".content" ed è elemento PARI prende il background grigio.*/
 .content:nth-of-type(even){
     background-color: rgb(196, 196, 196);
 }
+
+
+/* 
+----------------------------------
+Footer
+----------------------------------
+*/
+
+footer{
+    background-color: black;
+}
+
+.top_footer{
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    justify-content: center;
+}
+
+.big_footer{
+    width: 400px;
+}
+
+.small_footer{
+    width: 200px;
+}
+
+.bottom_footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.bottom_footer_text{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
