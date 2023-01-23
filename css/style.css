@@ -20,12 +20,10 @@ Regole Setup struttura (da rimuovere in seguito)
 
 .setup .top_header{
     height: 100px;
-    background-color: lightblue;
 }
 
 .setup .bottom_header{
     height: 400px;
-    background-color: rgb(3, 3, 126);
 }
 
 .setup .top_header_text{
@@ -40,10 +38,15 @@ Regole Setup struttura (da rimuovere in seguito)
 .setup .bottom_header_text{
     background-color: rgb(248, 127, 218);
     height: 350px;
+    border: 1px dashed black;
 }
 
-.setup .top_content{
+.setup .top_main, .central_main, .bottom_main{
     height: 500px;
+}
+
+.setup .last_main{
+    height: 800px;
 }
 
 .setup .big{
@@ -58,6 +61,14 @@ Regole Setup struttura (da rimuovere in seguito)
     border: 1px dashed black;
 }
 
+.setup .huge{
+    height: 700px;
+    background-color: rgb(0, 91, 8);
+    border: 1px dashed black;
+}
+
+
+
 
 
 /* 
@@ -66,7 +77,9 @@ Regole Setup struttura (da rimuovere in seguito)
 ----------------------------------
 */
 
+
 .top_header{
+    background-color: lightblue;
     padding: 25px;
 }
 
@@ -110,6 +123,7 @@ Regole Setup struttura (da rimuovere in seguito)
 */
 
 .bottom_header{
+    background-color: rgb(3, 3, 126);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -126,35 +140,45 @@ Regole Setup struttura (da rimuovere in seguito)
 ----------------------------------
 */
 
-.top_content{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-}
-
 .big{
-  width: 800px;
-}
-
+    width: 800px;
+  }
+  
 .small{
-   width: 400px;
-}
+     width: 400px;
+  }
 
-.central_content{
+.top_main{
     display:flex;
     justify-content:center;
     align-items: center;
 }
 
-.bottom_content{
+.central_main{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+
+.bottom_main{
     display:flex;
     justify-content:center;
     align-items: center;
 }
 
+.last_main{
+    padding: 50px;
+}
 
+.huge{
+    width: 1200px;
+    margin: 0 auto;
+}
 
+ /* INIZIO PROVA SELETTORE AVANZATO ":nth-of-type(even)": tutto quello 
+che ha classe ".content" ed è elemento PARI prende il background grigio.*/
 
-
-
-
+.content:nth-of-type(even){
+    background-color: rgb(196, 196, 196);
+}
