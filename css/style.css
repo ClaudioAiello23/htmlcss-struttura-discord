@@ -42,6 +42,23 @@ Regole Setup struttura (da rimuovere in seguito)
     height: 350px;
 }
 
+.setup .top_content{
+    height: 500px;
+}
+
+.setup .big{
+    height: 450px;
+    background-color: rgb(76, 99, 249);
+    border: 1px dashed black;
+}
+
+.setup .small{
+    height: 450px;
+    background-color: pink;
+    border: 1px dashed black;
+}
+
+
 
 /* 
 ----------------------------------
@@ -103,6 +120,37 @@ Regole Setup struttura (da rimuovere in seguito)
     width: 900px;
 }
 
+/* 
+----------------------------------
+ Main
+----------------------------------
+*/
+
+.top_content{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.big{
+  width: 800px;
+}
+
+.small{
+   width: 400px;
+}
+
+.central_content{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bottom_content{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
 
 
 
