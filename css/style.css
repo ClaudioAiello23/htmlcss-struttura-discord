@@ -40,7 +40,7 @@ Regole Setup struttura (da rimuovere in seguito)
 
 /* 
 ----------------------------------
-Header
+ Top Header
 ----------------------------------
 */
 
@@ -49,8 +49,29 @@ Header
 }
 
 .top_header_text {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.logo{
+    float:left;
+    width: 25%;
+}
+
+.link{
+    float:left;
+    width: 50%;
+    text-align: center;
+  }
+
+.login{
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.logo, .link, .login{
+    padding: 15px;
 }
 
 .top_header_text::after {
@@ -60,18 +81,6 @@ Header
 }
 
 
-.logo{
-    float:left;
-}
-
-.link{
-    text-align: center;
-    float:left;
-}
-
-.login{
-    text-align:right;
-}
 
 
 
